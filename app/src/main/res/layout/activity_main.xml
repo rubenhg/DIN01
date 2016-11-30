@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="utad.evaluacion0.MainActivity"
+    android:id="@+id/backgroundColorchange">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DINT01"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:background="#33daea"
+        android:id="@+id/lblHeading"
+        android:textColorHighlight="#2136ee"
+        android:textStyle="bold"
+        android:textColor="#1515ea" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/utad"
+        android:layout_below="@+id/lblHeading" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificar imagen por otra   "
+            android:id="@+id/lblCambiarImagen"
+            android:textSize="16dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar imagen"
+            android:id="@+id/btnCI" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modificar color de fondo      "
+            android:id="@+id/lblCambiarColor"
+            android:textSize="16dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar Color"
+            android:id="@+id/btnCC" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Ocultar Imagen                       "
+            android:id="@+id/lblOcultarImagen"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:text="              Hacer desaparecer la imagen"
+            android:id="@+id/lblEliminarImagen"
+            android:textSize="14dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocultar"
+            android:id="@+id/btnOcultar"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_toRightOf="@+id/btnEliminar"
+            android:layout_toEndOf="@+id/btnEliminar"
+            android:layout_weight="0.96" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Imagen"
+            android:id="@+id/btnEliminar"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar texto de cabecera   "
+            android:id="@+id/lblCambiarTexto"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar dialogo de proceso"
+            android:id="@+id/lblMostratDialogo"
+            android:textSize="14dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linearLayout6"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar texto"
+            android:id="@+id/btnCambiarTexto"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_toRightOf="@+id/btnEliminar"
+            android:layout_toEndOf="@+id/btnEliminar"
+            android:layout_weight="1.17" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Mostrar"
+            android:id="@+id/btnMostrarDialogo"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar aplicación"
+        android:id="@+id/btnFin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
